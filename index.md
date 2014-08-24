@@ -13,7 +13,7 @@ ext_widgets:
   rCharts: libraries/HighCharts
 widgets: []
 
----  
+---
 
 ## Introduction and Motivation
 **Life Expectancy at Birth (LEB)** is the expected (in the statistical sense) number of years of life remaining at birth. There are great variations in life expectancy between different parts of the world, mostly caused by differences in 
@@ -24,17 +24,8 @@ widgets: []
 > * Industrial pollution
 
 The impact of AIDS is particularly notable on life expectancy in many African countries. The difference in life expectancy between men and women is also obvious. Therefore, we build this **Shiny App** to show the LEB of different country and gender.
-<div>
-slides > slide:not(.nobackground):after {
-  font-size: 12pt;  
-  content: attr(data-slide-num) "/" attr(data-total-slides);
-  position: absolute;
-  bottom: 20px;
-  right: 60px;
-  line-height: 1.9;
-}
-</div>
----   
+
+---
 
 ## Shiny App: LEB of Different Country
 
@@ -43,7 +34,7 @@ slides > slide:not(.nobackground):after {
 </div> 
 [LEB of Different Country App Hosted by shinyapps.io](http://uhuruqingcheng.shinyapps.io/shiny) 
 
----  
+---
 
 ## Features
 
@@ -189,7 +180,7 @@ Enter the gender and country you intrested in and get informed!
 *Plot: LEB trend by gender in USA* 
 [Github Repository](https://github.com/uhuruqingcheng/DevelopingDataProducts_Project/tree/gh-pages)
 
----  
+---
 
 ## Notes and Further Directions
 
