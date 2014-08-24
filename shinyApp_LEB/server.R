@@ -14,7 +14,7 @@ LEBTrend<-function(ccountry){
     temp1<-subset(LEBmaleCat,LEBmaleCat$country==ccountry,select=c("Year","Value","gender"))
     temp2<-subset(LEBfemaleCat,LEBfemaleCat$country==ccountry,select=c("Year","Value","gender"))
     temp<- rbind(temp1,temp2)
-    temp<-temp[order(c(temp$Year,temp$gender)),]
+#     temp<-temp[order(c(temp$Year,temp$gender)),]
     names(temp)<-c("Year","Life Expectancy at Birth Value","gender")
     return(temp)
 }

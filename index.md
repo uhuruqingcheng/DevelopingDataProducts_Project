@@ -1,16 +1,19 @@
 ---
-title       : Life Expectancy at Birth of Different Country
-subtitle    : Developing Data Products - Project - Shiny App
-author      : Qingcheng
-job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-ext_widgets : {rCharts: [libraries/HighCharts]}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
----
+title: "Life Expectancy at Birth of Different Country"
+author: "Qingcheng"
+framework: io2012
+output: html_document
+hitheme: tomorrow
+job: null
+knit: slidify::knit2slides
+mode: selfcontained
+highlighter: highlight.js
+subtitle: Developing Data Products - Project - Shiny App
+ext_widgets:
+  rCharts: libraries/HighCharts
+widgets: []
+
+---  
 
 ## Introduction and Motivation
 **Life Expectancy at Birth (LEB)** is the expected (in the statistical sense) number of years of life remaining at birth. There are great variations in life expectancy between different parts of the world, mostly caused by differences in 
@@ -21,25 +24,30 @@ knit        : slidify::knit2slides
 > * Industrial pollution
 
 The impact of AIDS is particularly notable on life expectancy in many African countries. The difference in life expectancy between men and women is also obvious. Therefore, we build this **Shiny App** to show the LEB of different country and gender.
-
---- 
+<div>
+slides > slide:not(.nobackground):after {
+  font-size: 12pt;  
+  content: attr(data-slide-num) "/" attr(data-total-slides);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  line-height: 1.9;
+}
+</div>
+---   
 
 ## Shiny App: LEB of Different Country
+
 <div style='text-align: center;'>
     <img src='assets/img/Snap1.jpg' />
 </div> 
 [LEB of Different Country App Hosted by shinyapps.io](http://uhuruqingcheng.shinyapps.io/shiny) 
 
----
+---  
 
 ## Features
 
 Enter the gender and country you intrested in and get informed!
-
-
-```
-## Warning: Observations with NA has been removed
-```
 
 
 <div id = 'chart1' class = 'rChart highcharts'></div>
@@ -178,11 +186,15 @@ Enter the gender and country you intrested in and get informed!
     })(jQuery);
 </script>
 
-*Plot: LEB trend by gender in USA* [Github Repository](https://github.com/uhuruqingcheng/DevelopingDataProducts_Project)
+*Plot: LEB trend by gender in USA* 
+[Github Repository](https://github.com/uhuruqingcheng/DevelopingDataProducts_Project/tree/gh-pages)
 
----
+---  
 
-## END
+## Notes and Further Directions
 
+This application obviously is very simple, the dataset is also small. The futher work may be increasing the dataset and give more comparative analysis result.
 
-Your comments and questions are welcome. Please report bugs. [xiang_lqc AT 126.com]
+Your comments and questions are welcome. 
+
+Please report bugs. [xiang_lqc@126.com]

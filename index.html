@@ -61,16 +61,22 @@
 
 <p>The impact of AIDS is particularly notable on life expectancy in many African countries. The difference in life expectancy between men and women is also obvious. Therefore, we build this <strong>Shiny App</strong> to show the LEB of different country and gender.</p>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<div>
+slides > slide:not(.nobackground):after {
+  font-size: 12pt;  
+  content: attr(data-slide-num) "/" attr(data-total-slides);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  line-height: 1.9;
+}
+</div>
 
-<slide class="" id="slide-2" style="background:;">
-  <hgroup>
-    <h2>Shiny App: LEB of Different Country</h2>
-  </hgroup>
-  <article data-timings="">
-    <div style='text-align: center;'>
+<hr>
+
+<h2>Shiny App: LEB of Different Country</h2>
+
+<div style='text-align: center;'>
     <img src='assets/img/Snap1.jpg' />
 </div> 
 
@@ -80,15 +86,12 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-3" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
     <h2>Features</h2>
   </hgroup>
   <article data-timings="">
     <p>Enter the gender and country you intrested in and get informed!</p>
-
-<pre><code>## Warning: Observations with NA has been removed
-</code></pre>
 
 <div id = 'chart1' class = 'rChart highcharts'></div>
 
@@ -227,18 +230,23 @@
     })(jQuery);
 </script>
 
-<p><em>Plot: LEB trend by gender in USA</em> <a href="https://github.com/uhuruqingcheng/DevelopingDataProducts_Project">Github Repository</a></p>
+<p><em>Plot: LEB trend by gender in USA</em> 
+<a href="https://github.com/uhuruqingcheng/DevelopingDataProducts_Project/tree/gh-pages">Github Repository</a></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>END</h2>
+    <h2>Notes and Further Directions</h2>
   </hgroup>
   <article data-timings="">
-    <p>Your comments and questions are welcome. Please report bugs. [xiang_lqc AT 126.com]</p>
+    <p>This application obviously is very simple, the dataset is also small. The futher work may be increasing the dataset and give more comparative analysis result.</p>
+
+<p>Your comments and questions are welcome. </p>
+
+<p>Please report bugs. [<a href="mailto:xiang_lqc@126.com">xiang_lqc@126.com</a>]</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -256,20 +264,14 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Shiny App: LEB of Different Country'>
+        data-slide=2 title='Features'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Features'>
+        data-slide=3 title='Notes and Further Directions'>
          3
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='END'>
-         4
       </a>
     </li>
   </ul>
