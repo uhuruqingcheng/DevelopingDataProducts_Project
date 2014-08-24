@@ -19,6 +19,7 @@ LEBTrend<-function(ccountry){
     return(temp)
 }
 library(shiny)
+require(rCharts)
 library(reshape2)
 LEBmaleCat <- read.csv("data/LifeExpectancyAtBirth_male.csv")
 LEBfemaleCat <- read.csv("data/LifeExpectancyAtBirth_female.csv")
