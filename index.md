@@ -30,7 +30,7 @@ The impact of AIDS is particularly notable on life expectancy in many African co
 ## Shiny App: LEB of Different Country
 
 <div style='text-align: center;'>
-    <img src='assets/img/Snap1.jpg' />
+    <img src='assets/img/Snap1.JPG' />
 </div> 
 [LEB of Different Country App Hosted by shinyapps.io](http://uhuruqingcheng.shinyapps.io/shiny) 
 
