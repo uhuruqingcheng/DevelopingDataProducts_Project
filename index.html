@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Life Expectancy at Birth of Different Country</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Life Expectancy at Birth of Different Country">
+  <meta name="author" content="Qingcheng">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/HighCharts/js/jquery-1.9.1.min.js"></script>
+<script src="libraries/widgets/HighCharts/js/highcharts.js"></script>
+<script src="libraries/widgets/HighCharts/js/highcharts-more.js"></script>
+<script src="libraries/widgets/HighCharts/js/exporting.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Life Expectancy at Birth of Different Country</h1>
+    <h2>Developing Data Products - Project - Shiny App</h2>
+    <p>Qingcheng<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction and Motivation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Life Expectancy at Birth (LEB)</strong> is the expected (in the statistical sense) number of years of life remaining at birth. There are great variations in life expectancy between different parts of the world, mostly caused by differences in </p>
+
+<ul class = "build incremental">
+<li>Economic circumstances</li>
+<li>Public health</li>
+<li>Medical care </li>
+<li>Industrial pollution</li>
+</ul>
+
+<p>The impact of AIDS is particularly notable on life expectancy in many African countries. The difference in life expectancy between men and women is also obvious. Therefore, we build this <strong>Shiny App</strong> to show the LEB of different country and gender.</p>
+
+<div>
+slides > slide:not(.nobackground):after {
+  font-size: 12pt;  
+  content: attr(data-slide-num) "/" attr(data-total-slides);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  line-height: 1.9;
+}
+</div>
+
+<hr>
+
+<h2>Shiny App: LEB of Different Country</h2>
+
+<div style='text-align: center;'>
+    <img src='assets/img/Snap1.jpg' />
+</div> 
+
+<p><a href="http://uhuruqingcheng.shinyapps.io/shiny">LEB of Different Country App Hosted by shinyapps.io</a> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Enter the gender and country you intrested in and get informed!</p>
+
+<div id = 'chart1' class = 'rChart highcharts'></div>
+
+<script type='text/javascript'>
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "chart1",
+"width":            800,
+"height":            400,
+"credits": {
+ "href": null,
+"text": null 
+},
+"exporting": {
+ "enabled": false 
+},
+"title": {
+ "text": null 
+},
+"yAxis": [
+ {
+ "title": {
+ "text": "Life Expectancy at Birth Value" 
+} 
+} 
+],
+"series": [
+ {
+ "data": [
+ [
+           1970,
+          74.7 
+],
+[
+           1990,
+          78.8 
+],
+[
+           2000,
+          79.3 
+],
+[
+           2005,
+          79.9 
+],
+[
+           2008,
+          80.5 
+],
+[
+           2009,
+          80.6 
+],
+[
+           2010,
+            81 
+],
+[
+           2011,
+          81.1 
+],
+[
+           2012,
+          81.2 
+] 
+],
+"name": "female",
+"type": "line",
+"marker": {
+ "radius":              3 
+} 
+},
+{
+ "data": [
+ [
+           1970,
+          67.1 
+],
+[
+           1990,
+          71.8 
+],
+[
+           2000,
+          74.1 
+],
+[
+           2005,
+          74.9 
+],
+[
+           2008,
+          75.5 
+],
+[
+           2009,
+          75.7 
+],
+[
+           2010,
+          76.2 
+],
+[
+           2011,
+          76.3 
+],
+[
+           2012,
+          76.4 
+] 
+],
+"name": "male",
+"type": "line",
+"marker": {
+ "radius":              3 
+} 
+} 
+],
+"xAxis": [
+ {
+ "title": {
+ "text": "Year" 
+} 
+} 
+],
+"subtitle": {
+ "text": null 
+},
+"id": "chart1",
+"chart": {
+ "renderTo": "chart1" 
+} 
+});
+        });
+    })(jQuery);
+</script>
+
+<p><em>Plot: LEB trend by gender in USA</em> 
+<a href="https://github.com/uhuruqingcheng/DevelopingDataProducts_Project/tree/gh-pages">Github Repository</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Notes and Further Directions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application obviously is very simple, the dataset is also small. The futher work may be increasing the dataset and give more comparative analysis result.</p>
+
+<p>Your comments and questions are welcome. </p>
+
+<p>Please report bugs. [<a href="mailto:xiang_lqc@126.com">xiang_lqc@126.com</a>]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction and Motivation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Features'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Notes and Further Directions'>
+         3
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
